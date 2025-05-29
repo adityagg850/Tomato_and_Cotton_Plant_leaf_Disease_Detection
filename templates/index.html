@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <title>Leaf Disease Detection</title>
+
+</head>
+
+<body class="animate__animated animate__fadeIn">
+  <!-- Navbar -->
+  <nav class="navbar navbar-light" style="background-color: #28a745;">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 mx-auto name">Leaf Disease Detection</span>
+      <form class="d-flex">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                Home
+            </button>
+            <!-- Modal -->
+      </form>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="text-center">
+
+      <small class="text-muted" style="color: white !important;">
+      </small>
+    </div>
+  </div>
+
+
+  <!-- Disease Cards -->
+  <div class="container animate__animated animate__fadeInUpBig">
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-bottom: 5%;">
+
+
+
+<div class="col">
+        <div class="card h-100 text-center mx-auto" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="../static/tomato.webp" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Tomato Disease</h4>
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-success" href="{{ url_for('tom_') }}">Check</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JS -->
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+  <script src="../static/script.js"></script>
+</body>
+
+</html>
